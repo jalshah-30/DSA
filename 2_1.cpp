@@ -6,7 +6,6 @@ void call_reference(int &x,int &y){
     temp=x;
     x=y;
     y=temp;
-    cout << x << " "<< y<< endl;
 }
 
 void call_values(int x,int y){
@@ -14,13 +13,14 @@ void call_values(int x,int y){
     temp=x;
     x=y;
     y=temp;
-    cout << x << " "<< y<< endl;
 }
 
 int main()
 {
     int a=1,b=9;
     call_values(a,b);
+    cout << a <<""<<b<<endl;
     call_reference(a,b);
+    cout << a <<""<<b<<endl;
     return 0;
 }
